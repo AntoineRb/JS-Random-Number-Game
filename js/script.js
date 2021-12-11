@@ -5,10 +5,8 @@ let btn          = document.querySelector('.btnSubmit');
 let btnRestart   = document.querySelector('.btnRestart');
 let infoList     = document.querySelector('.infoList');
 
-let userChoice   = 0;
-
-let randomNumber = randomInt(1000);
-
+let userChoice     = 0;
+let randomNumber   = randomInt(1000);
 let attemptCounter = 0;
 
 
@@ -117,7 +115,6 @@ document.querySelector('form').addEventListener('submit', (e) => {
         
      }
      else {
-       // Mettre notre bordure de formulaire en gris (silver)
        input.style.backgroundColor = 'white';
        attemptCounter++;
        userChoice = input.value;
