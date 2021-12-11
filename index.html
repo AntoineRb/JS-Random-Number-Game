@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+      
+      <span class="material-icons">casino</span>
+        <h1>Le Jeu Du Nombre Mystère</h1>
+      <span class="material-icons">casino</span>
+
+  </header>
+  <main>
+
+    <section>
+      <form>
+        <label for="userAnswer" ></label>
+        <input type="text" id="userAnswer" class="userAnswer" placeholder="Choisissez un nombre entre 0 et 1000, puis saisissez le ici.">   
+        <button type="submit" class="btnSubmit">Valider</button>
+        <button class="btnRestart">Rejouer</button>
+      </form>
+    </section>
+
+    <section class="info">
+
+        <p class ="error">Veuillez saisir uniquement des Chiffres !</p>  
+
+        <div class="infoList"></div>
+
+    </section>
+  </main>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
