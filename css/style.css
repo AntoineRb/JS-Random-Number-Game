@@ -1,0 +1,374 @@
+* {
+  padding: 0;
+  margin:  0;
+}
+
+body {
+  background: linear-gradient(to right, rgb(44, 62, 80), rgb(76, 161, 175));
+}
+
+main {
+  margin: auto;
+
+  box-shadow: rgba(62, 237, 231, 0.4)  -5px 5px,
+              rgba(62, 237, 231, 0.3)  -10px 10px, 
+              rgba(62, 237, 231, 0.2)  -15px 15px, 
+              rgba(62, 237, 231, 0.1)  -20px 20px, 
+              rgba(62, 237, 231, 0.05) -25px 25px;
+
+}
+/*
+    Scroll bar
+*/
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  display:            none;
+  display: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:       whitesmoke;
+  border-radius:      1rem; 
+  display: none;
+}
+
+
+header {
+
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  justify-content: space-evenly;
+
+  background-color: black;
+
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+header .material-icons {
+  color: aliceblue;
+  font-size: 7rem;
+}
+
+h1 {
+
+  font-family: 'Bebas Neue';;
+  letter-spacing: 5px;
+}
+
+header h1, header .material-icons  {
+  background: -webkit-linear-gradient(rgb(44, 62, 80), rgb(76, 161, 175));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+p, a {
+
+  font-family: 'Bebas Neue';
+
+}
+
+
+/*
+    parent container for btn and input
+*/
+form {
+
+  display:          flex;
+  flex-direction:   column;
+  width:            100%;
+  margin:           auto;
+  margin-top:      8%;
+
+  background-color: whitesmoke;
+}
+
+/*
+    Input 
+*/
+
+.userAnswer {
+
+  width:      99.3%;
+  height:     81.88px;
+  margin:     auto;
+  border:     none;
+  text-align: center;
+  
+}
+.userAnswer::placeholder {
+  text-align: center;
+}
+
+.userAnswer:focus {
+    outline:  none !important;
+}
+
+/*
+    Error message for input
+*/
+
+.error {
+  font-family:      sans-serif;
+  font-weight:      bold;
+  font-size:        1.3rem;
+  color:            white;
+  background-color: rgb(255, 55, 55);
+  text-align:       center;
+  padding-top:      1%;
+  padding-bottom:   1%;
+  border-top:       1px solid whitesmoke;
+  border-bottom:    1px solid whitesmoke;
+}
+
+/*
+    Button for input
+*/
+.btnRestart, form .btnSubmit {
+
+  padding-top:        1.5%;
+  padding-bottom:     1.5%;
+  width:              100% ;
+  margin:             auto;
+  color:            whitesmoke;
+  font-weight:        bold;
+  letter-spacing:     0.15em;
+  text-align:         center;
+  font-size:          2rem;
+  cursor:             pointer;
+
+  border: none;
+  border-bottom: 1px solid whitesmoke;
+}
+
+form .btnSubmit {
+  background: linear-gradient(to right,rgb(76, 161, 175), rgb(44, 62, 80));
+}
+
+.btnRestart {
+  background: rgb(16, 136, 0);
+  display: none;
+}
+
+.info .btnRestart:hover , form .btnSubmit:hover {
+
+  opacity: 0.7;
+}
+
+/*
+    Informations block
+*/
+
+.info {
+
+  width:             100%;
+  margin:            auto;
+  overflow:          scroll;
+}
+
+.info .infoList {
+
+  width:              100%;
+  height:             550px;
+  margin:             auto;
+  background-color: whitesmoke;
+}
+
+.info .infoList .infoText, .infoTextVictory {
+
+  display:          flex;
+  align-items:      center;
+  width:            100%;
+  height:           120px;
+  letter-spacing:   1.2px;
+  color:            whitesmoke;
+
+  border-bottom: 2px solid whitesmoke;
+
+  font-size:  2.5rem;
+  text-align: center;
+}
+
+
+/*
+    Google Icons
+*/
+.info .infoList .infoText span, .infoTextVictory span {
+  font-size:    4rem;
+  margin-right: 3%;
+  margin-left:  7%;
+  margin-right: 3%;
+}
+
+/*
+  Attempt number
+*/
+.info .infoList .infoText .attempt, .infoTextVictory .attempt {
+  margin-right: 3%;
+}
+
+.info .infoList .infoText {
+
+  background-color: rgb(255, 135, 50);
+
+}
+
+.info .infoList .infoTextVictory {
+
+  background-color: rgb(16, 136, 0);
+
+}
+
+
+footer {
+
+  width: 100%;
+
+  text-align: center;
+  margin-top: 2%;
+  
+}
+footer a {
+
+
+  text-decoration: none;
+  font-size:       3rem;
+  letter-spacing:  2px;
+  color:           whiteSmoke;
+  
+
+}
+
+
+/*
+      Responsive
+*/
+
+@media only screen and (min-width: 320px) {
+  main{
+    width: 90%;
+  }
+
+
+  .info .infoList .infoText p, .infoTextVictory p{
+    font-size: 1.5rem;
+  }
+  body header {
+    font-size: 0.7rem;
+  }
+  header .material-icons {
+    font-size: 2rem;
+  }
+
+  .info .infoList .infoTextVictory p, .info .infoList .infoText p{
+
+    font-size: 2rem ;
+
+  }
+
+
+}
+
+@media only screen and (min-width: 481px) {
+  main{
+    width: 80%;
+  }
+  .userAnswer {
+    font-size: 0.9rem;
+  }
+  .info .infoList .infoText p, .infoTextVictory p{
+    font-size: 1.5rem;
+  }
+  header .material-icons {
+    font-size: 3rem;
+  }
+}
+
+
+@media only screen and (min-width: 660px) {
+
+  .userAnswer {
+    font-size: 1.2rem;
+  }
+  body header {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .userAnswer {
+    font-size: 1.3rem;
+  }
+
+  .info .infoList .infoText p, .infoTextVictory p{
+    font-size: 1.5rem;
+  }
+  body header {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (min-width: 930px) {
+
+  .userAnswer {
+    font-size: 1.3rem;
+  }
+
+  .info .infoList .infoText p, .infoTextVictory p{
+    font-size: 1.5rem;
+  }
+  body header {
+    font-size: 2rem ;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+
+  main{
+    width: 80%;
+  }
+  .userAnswer {
+    font-size: 1.5rem;
+  }
+  .info .infoList .infoText p, .infoTextVictory p{
+    font-size: 1.5rem;
+  }
+  body header {
+    font-size: 2.5rem;
+  }
+  header .material-icons {
+    font-size: 3rem;
+  }
+
+}
+
+@media only screen and (min-width: 1201px) {
+
+
+  main{
+    width: 60%;
+  }
+
+  input {
+    font-size: 1.5rem;
+  }
+  .info .infoList .infoText, .infoTextVictory{
+    font-size: 2rem;
+  }
+  body header {
+    font-size: 3.5rem;
+  }
+  header .material-icons {
+    font-size: 4rem;
+  }
+}
