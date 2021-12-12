@@ -30,7 +30,7 @@ function checkInput() {
     
     } else {
 
-        errorMessage.style.display = 'inline';
+        errorMessage.style.display = '';
         input.style.border = "red"
 
     }

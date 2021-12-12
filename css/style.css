@@ -88,7 +88,7 @@ form {
   flex-direction:   column;
   width:            100%;
   margin:           auto;
-  margin-top:      8%;
+  margin-top:       8%;
 
   background-color: whitesmoke;
 }
@@ -112,23 +112,6 @@ form {
 
 .userAnswer:focus {
     outline:  none !important;
-}
-
-/*
-    Error message for input
-*/
-
-.error {
-  font-family:      sans-serif;
-  font-weight:      bold;
-  font-size:        1.3rem;
-  color:            white;
-  background-color: rgb(255, 55, 55);
-  text-align:       center;
-  padding-top:      1%;
-  padding-bottom:   1%;
-  border-top:       1px solid whitesmoke;
-  border-bottom:    1px solid whitesmoke;
 }
 
 /*
@@ -174,6 +157,23 @@ form .btnSubmit {
   width:             100%;
   margin:            auto;
   overflow:          scroll;
+}
+
+/*
+    Error message for input
+*/
+
+.info .error {
+  font-family:      sans-serif;
+  font-weight:      bold;
+  font-size:        1.3rem;
+  color:            white;
+  background-color: rgb(255, 55, 55);
+  text-align:       center;
+  padding-top:      1%;
+  padding-bottom:   1%;
+  border-top:       1px solid whitesmoke;
+  border-bottom:    1px solid whitesmoke;
 }
 
 .info .infoList {
